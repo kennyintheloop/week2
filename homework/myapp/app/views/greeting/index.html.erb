@@ -1,0 +1,18 @@
+<style media="screen" type="text/css">
+.navbar li
+{
+display:inline;
+}
+</style>
+<div class="navbar">
+<ul>
+<li><%= link_to "Favorites", favorites_url %></li>
+<li><%= link_to "Friends", friends_url %></li>
+<li><%= link_to "Greeting", greeting_url %></li>
+<li><%= link_to "Search", search_url %></li>
+</ul>
+</div>
+
+<center>
+<h1><%=@greeting_msg[rand(0..@greeting_msg.length-1)] %></h1>
+</center>
